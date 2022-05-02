@@ -5,7 +5,7 @@
 export default function Item({list, handleFavorita}) {
   return (
     <>
-    {list.map((item,index) => <li key={index}><button onClick={() => {handleFavorita(item)}}>{item}</button></li>)}
+    {list.map((item,index) => <li key={index} onClick={() => {handleFavorita(item)}}>{item}</li>)}
     </>
   );
   }
